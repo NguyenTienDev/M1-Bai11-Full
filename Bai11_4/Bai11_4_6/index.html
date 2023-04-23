@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>In hình trái tim</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		canvas {
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+</head>
+<body>
+	<canvas id="myCanvas"></canvas>
+
+	<script>
+		var canvas = document.getElementById("myCanvas");
+		var context = canvas.getContext("2d");
+
+		context.fillStyle = "#ff0000";
+		context.beginPath();
+		context.moveTo(100, 30);
+		context.lineTo(140, 80);
+		context.lineTo(100, 130);
+		context.lineTo(60, 80);
+		context.closePath();
+		context.fill();
+	</script>
+</body>
+</html>
